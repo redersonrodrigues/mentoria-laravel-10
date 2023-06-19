@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use function Symfony\Component\String\s;
 
 class Produto extends Model
 {
@@ -13,5 +14,17 @@ class Produto extends Model
         'nome', 'valor'
     ];
 
+    public function getProdutosPesquisarIndex(string $search='')
+    {
+        $produto = $this->where(function ($query) use ($search)
+        {
+            if ($search)
+            {
+                $query->where('nome', $search);
+                $query->orWhere('nome', 'LIKE', "%{$search}%");
+            }
+        })->get();
+        return $produto;
+    }
 
 }
