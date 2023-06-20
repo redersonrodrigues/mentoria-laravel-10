@@ -18,7 +18,13 @@ Route::get('/', function () {
     return view('index');
 });
 // Produtos
-Route::prefix('produtos')->name('produtos.')->controller(ProdutosController::class)->group(function (){
-    Route::get('/',  'index')->name('index');
-    Route::delete('/delete',  'delete')->name('delete');
+Route::prefix('produtos')->group(function (){
+    Route::get('/', [ProdutosController::class, 'index'])->name('produto.index');
+    //Cadastro Create
+    Route::get('/cadastrarProduto', [ProdutosController::class, 'cadastrarProduto'])->name('cadastrar.produto');
+    Route::post('/cadastrarProduto', [ProdutosController::class, 'cadastrarProduto'])->name('cadastrar.produto');
+    //Atualiza Update
+    Route::get('/atualizarProduto/{id}', [ProdutosController::class, 'atualizarProduto'])->name('atualizar.produto');
+    Route::put('/atualizarProduto/{id}', [ProdutosController::class, 'atualizarProduto'])->name('atualizar.produto');
+    Route::delete('/delete', [ProdutosController::class, 'delete'])->name('produto.delete');
 });
