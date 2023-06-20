@@ -41,7 +41,7 @@ class ProdutosController extends Controller
             $data['valor'] = $componentes->formatacaoMascaraDinheiroDecimal($data['valor']);
             Produto::create($data);
 
-            //Toastr::success('Dados gravados com sucesso.');
+            Toastr::success('Dados gravados com sucesso.');
             return redirect()->route('produto.index');
         }
         // mostrar os dados
@@ -58,7 +58,7 @@ class ProdutosController extends Controller
             $buscaRegistro = Produto::find($id);
             $buscaRegistro->update($data);
 
-            //Toastr::success('Dados atualizados com sucesso.');
+            Toastr::success('Dados atualizados com sucesso.');
             return redirect()->route('produto.index');
         }
         $findProduto = Produto::where('id', '=', $id)->first();
