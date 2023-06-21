@@ -2,7 +2,7 @@
      <div class="position-sticky pt-3 sidebar-sticky">
          <ul class="nav flex-column">
              <li class="nav-item">
-                 <a class="nav-link" aria-current="page" href="#">
+                 <a class="nav-link" aria-current="page" href=" {{ route('dashboard.index') }} ">
                      <span data-feather="home" class="align-text-bottom"></span>
                      Dashboard
                  </a>
@@ -26,7 +26,7 @@
                  </a>
              </li>
              <li class="nav-item">
-                 <a class="nav-link" href="#">
+                 <a class="nav-link" href="{{ route('usuario.index') }}">
                      <span data-feather="users" class="align-text-bottom"></span>
                      Usuario
                  </a>

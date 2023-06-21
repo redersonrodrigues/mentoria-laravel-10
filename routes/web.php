@@ -53,7 +53,7 @@ Route::prefix('vendas')->group(function () {
     Route::post('/cadastrarVenda', [VendaController::class, 'cadastrarVendas'])->name('cadastrar.venda');
     Route::get('/enviaComprovantePorEmail/{id}', [VendaController::class, 'enviaComprovantePorEmail'])->name('enviaComprovantePorEmail.venda');
 });
-/**
+
 Route::prefix('usuario')->group(function () {
     Route::get('/', [UsuarioController::class, 'index'])->name('usuario.index');
     Route::get('/cadastrarUsuario', [UsuarioController::class, 'cadastrarUsuario'])->name('cadastrar.usuario');
@@ -64,6 +64,6 @@ Route::prefix('usuario')->group(function () {
     Route::delete('/delete', [UsuarioController::class, 'delete'])->name('usuario.delete');
 });
 
-
+/**
 require __DIR__ . '/auth.php';
 **/

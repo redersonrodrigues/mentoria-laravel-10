@@ -170,11 +170,11 @@
                                             </table>
                                             <p
                                                 style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">
-                                                This is a really simple email template. Its sole purpose is to get the
-                                                recipient to click the button with no distractions.</p>
+                                                Este é um modelo de e-mail realmente simples. Seu único objetivo é obter o
+                                                destinatário clique no botão sem distrações.</p>
                                             <p
                                                 style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 15px;">
-                                                Good luck! Hope it works.</p>
+                                                Boa sorte! Espero que funcione.</p>
                                         </td>
                                     </tr>
                                 </table>
