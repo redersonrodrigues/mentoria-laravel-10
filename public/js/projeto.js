@@ -29,7 +29,7 @@ function deleteRegistroPaginacao(rotaUrl, idDoRegistro) {
 // mascara para o campo valor
 $('#mascara_valor').mask('#.##0,00', { reverse: true });
 
-
+// busca do CEP pelo site viacep.com.br
 $("#cep").blur(function () {
     var cep = $(this).val().replace(/\D/g, '');
     if (cep != "") {
