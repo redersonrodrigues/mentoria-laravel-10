@@ -15,8 +15,26 @@ class ProdutosSeeder extends Seeder
     {
         Produto::create(
             [
-            'nome' => 'Victor Padovam',
-            'valor' => '20.00',
+            'nome' => 'Produto 1',
+            'valor' => '10.00',
+            ]
+        );
+        Produto::create(
+            [
+                'nome' => 'Produto 2',
+                'valor' => '2.00',
+            ]
+        );
+        Produto::create(
+            [
+                'nome' => 'Produto 3',
+                'valor' => '15.00',
+            ]
+        );
+        Produto::create(
+            [
+                'nome' => 'Produto 4',
+                'valor' => '8.00',
             ]
         );
     }

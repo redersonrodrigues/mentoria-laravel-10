@@ -14,7 +14,7 @@ class ClientesSeeder extends Seeder
         Cliente::create(
             [
                 'nome' => 'Victor Padovam',
-                'email' => 'v@gmail.com',
+                'email' => 'desenvolvimento@ramartecnologia.com.br',
                 'endereco' => 'rua x',
                 'logradouro' => 'rua x',
                 'cep' => '217900',
@@ -24,7 +24,7 @@ class ClientesSeeder extends Seeder
         Cliente::create(
             [
                 'nome' => 'Teste Padovam',
-                'email' => 'v@gmail.com',
+                'email' => 'desenvolvimento@ramartecnologia.com.br',
                 'endereco' => 'rua x',
                 'logradouro' => 'rua x',
                 'cep' => '217900',
